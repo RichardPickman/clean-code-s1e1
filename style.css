@@ -21,8 +21,11 @@
 }
 
 @media (max-width:768px) {
-.image { text-align: center;
-}
+
+    .image { 
+        text-align: center;
+    }
+    
 }
 .root {
     display: block;
