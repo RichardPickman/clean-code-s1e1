@@ -11,7 +11,7 @@
 var taskInput=document.getElementById("new-task");//Add a new task.
 var addButton=document.getElementsByTagName("button")[0];//first button
 var incompleteTaskHolder=document.querySelector(".todo-list");//ul of #incompleteTasks
-var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
+var completedTasksHolder=document.querySelector(".completed-tasks");//completed-tasks
 
 //New task list item
 var createNewTaskElement=function(taskString){
@@ -31,13 +31,16 @@ var createNewTaskElement=function(taskString){
     var deleteButton=document.createElement("button");//delete button
     var deleteButtonImg=document.createElement("img");//delete button image
 
+    listItem.className='todo-list__item';
+
     label.innerText=taskString;
-    label.className='task';
+    label.className='task todo-list__label';
 
     //Each elements, needs appending
     checkBox.type="checkbox";
+    checkBox.className="todo-list__checkbox";
+    editInput.className="task todo-list__input";
     editInput.type="text";
-    editInput.className="task";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="edit";
@@ -120,6 +123,7 @@ var taskCompleted=function(){
 
     //Append the task list item to the #completed-tasks
     var listItem=this.parentNode;
+    console.log(listItem)
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
 
