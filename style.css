@@ -165,11 +165,11 @@ ul li input[type=text] {
     display: none
 }
 
-#incompleteTasks .editMode input[type=text] {
+.todo-list .editMode input[type=text] {
     display: inline-block;
     width: 224px
 }
 
-#incompleteTasks .editMode label {
+.todo-list .editMode label {
     display: none;
 }
