@@ -152,17 +152,17 @@ li > * {
     width: 226px;
 }
 
-li >    input[type="text"] {
+.todo-list__item >    .todo-list__input {
     width: 226px
 }
 
-.delete img {
+.delete .todo-list__image {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
 
-.delete img:hover {
+.delete .todo-list__image:hover {
     transform: rotateZ(0);
 }
 
