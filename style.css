@@ -164,11 +164,11 @@ ul li input[type=text] {
     display: none
 }
 
-ul .editMode input[type=text] {
+#incompleteTasks .editMode input[type=text] {
     display: inline-block;
     width: 224px
 }
 
-ul .editMode label {
+#incompleteTasks .editMode label {
     display: none;
 }
