@@ -60,7 +60,8 @@ button{
     outline: none;
 }
 
-button {
+.edit,
+.delete {
     background: none;
     border: 0px;
     color: #888;
