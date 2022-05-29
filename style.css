@@ -37,7 +37,7 @@
 .task {
     width: 56%;
     display: inline-block;
-    flex-grow: 1;
+    flex-grow: 1
 }
 
 .task-row-wrapper {
@@ -60,8 +60,7 @@ button{
     outline: none;
 }
 
-.edit,
-.delete {
+button {
     background: none;
     border: 0px;
     color: #888;
@@ -72,7 +71,7 @@ button{
 }
 
 button:hover {
-    color: #3a3a3a;
+    color: #3a3A3a;
 }
 
 /* Heading */
@@ -165,11 +164,11 @@ ul li input[type=text] {
     display: none
 }
 
-.todo-list .editMode input[type=text] {
+.todo-list .todo-list__item--edit input[type=text] {
     display: inline-block;
     width: 224px
 }
 
-.todo-list .editMode label {
+.todo-list .todo-list__item--edit label {
     display: none;
 }

@@ -34,10 +34,10 @@
             <img src="./remove.svg" alt="Remove icon">
           </button>
         </li>
-        <li class="todo-list__item editMode">
+        <li class="todo-list__item todo-list__item--edit">
           <input type="checkbox">
           <label class="task">Go Shopping</label>
-          <input class="task" type="text" value="Go Shopping">
+          <input type="text" value="Go Shopping" class="task">
           <button class="edit">Save</button>
           <button class="delete">
             <img src="./remove.svg" alt="Remove icon">
@@ -47,7 +47,7 @@
     </section>
     <section class="complete">
       <h3>Completed</h3>
-      <ul class="completed-tasks">
+      <ul id="completed-tasks">
         <li class="completed-tasks__item">
           <input type="checkbox" checked>
           <label class="task">See the Doctor</label>
