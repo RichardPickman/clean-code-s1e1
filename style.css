@@ -173,11 +173,11 @@ button{
     display: none
 }
 
-.list .item--edit .list__input[type=text] {
+.list .list__item--edit .list__input[type=text] {
     display: inline-block;
     width: 224px
 }
 
-.list .item--edit .list__label {
+.list .list__item--edit .list__label {
     display: none;
 }
