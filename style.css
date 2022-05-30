@@ -5,18 +5,18 @@
     font-family: Lato, sans-serif;
 }
 
-.image {
+.header {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
 
-.image .layout__image {
+.header .header__image {
     width: 100%;
 }
 
-.image .moreinf {
+.image .more-inf {
     font-family: fantasy, cursive;
 }
 
@@ -60,8 +60,8 @@ button{
     outline: none;
 }
 
-.edit,
-.delete {
+.list__edit,
+.list__delete {
     background: none;
     border: 0px;
     color: #888;
@@ -71,8 +71,8 @@ button{
     cursor: pointer;
 }
 
-.edit:hover,
-.delete:hover {
+.list__edit:hover,
+.list__delete:hover {
     color: #3a3A3a;
 }
 
@@ -152,13 +152,13 @@ button{
     width: 226px
 }
 
-.delete .list__image {
+.list__delete .list__image {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
 
-.delete .list__image:hover {
+.list__delete .list__image:hover {
     transform: rotateZ(0);
 }
 
