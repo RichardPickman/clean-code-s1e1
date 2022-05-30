@@ -60,6 +60,7 @@ button{
     outline: none;
 }
 
+.add__edit,
 .list__edit,
 .list__delete {
     background: none;
@@ -71,6 +72,7 @@ button{
     cursor: pointer;
 }
 
+.add__edit:hover,
 .list__edit:hover,
 .list__delete:hover {
     color: #3a3A3a;
