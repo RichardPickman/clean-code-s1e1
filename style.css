@@ -88,9 +88,8 @@ button{
     text-transform: uppercase;
 }
 
-.todo-list__input[type="text"],
 .add__input[type="text"],
-.completed-tasks__input {
+.list__input {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -103,8 +102,7 @@ button{
     color: #888;
 }
 
-.todo-list__input[type="text"]:focus,
-.completed-tasks__input[type="text"]:focus {
+.list__input[type="text"]:focus {
     color: #333;
 }
 
@@ -113,8 +111,7 @@ button{
 }
 
 /* Task list */
-.todo-list__item,
-.completed-tasks__item {
+.list__item {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -124,68 +121,63 @@ button{
     align-items: center;
 }
 
-.todo-list__item, .completed-tasks__item > * {
+.list__item > * {
     vertical-align: middle;
 }
 
-.todo-list__item > .todo-list__checkbox {
+.list__label > .list__checkbox {
     margin: 0 10px;
 }
 
-.todo-list__item > .todo-list__label {
+.list__label > .list__label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
 
-.completed-tasks__item > .completed-tasks__checkbox {
+.list__item > .list__checkbox {
     margin: 0 10px;
 }
 
 
-.completed-tasks__item > .completed-tasks__label {
+.list__item > .list__label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
 
-.todo-list__item >    .todo-list__input {
+.list__item >    .list__input {
     width: 226px
 }
 
-.delete .todo-list__image {
+.delete .list__image {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
 
-.delete .todo-list__image:hover {
+.delete .list__image:hover {
     transform: rotateZ(0);
 }
 
 /* Completed */
-.completed-tasks .completed-tasks__label {
-    text-decoration: line-through;
-    color: #888;
-}
-
-.completed-tasks .todo-list__label {
+.completed-tasks .list__label {
     text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
-.todo-list .todo-list__item .todo-list__input[type=text] {
+.list .list__item .list__input[type=text] {
     display: none
 }
 
-.todo-list .todo-list__item--edit .todo-list__input[type=text] {
+.list .item--edit .list__input[type=text] {
     display: inline-block;
     width: 224px
 }
 
-.todo-list .todo-list__item--edit .todo-list__label {
+.list .item--edit .list__label {
     display: none;
 }
