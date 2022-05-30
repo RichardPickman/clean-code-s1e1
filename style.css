@@ -125,21 +125,9 @@ button{
     vertical-align: middle;
 }
 
-.list__label > .list__checkbox {
-    margin: 0 10px;
-}
-
-.list__label > .list__label {
-    padding-left: 10px;
-    box-sizing: border-box;
-    font-size: 18px;
-    width: 226px;
-}
-
 .list__item > .list__checkbox {
     margin: 0 10px;
 }
-
 
 .list__item > .list__label {
     padding-left: 10px;
