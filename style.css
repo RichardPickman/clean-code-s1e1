@@ -160,12 +160,12 @@ button{
 
 /* Edit Task */
 .list .list__item .list__input[type=text] {
-    display: none
+    display: none;
 }
 
 .list .list__item--edit .list__input[type=text] {
     display: inline-block;
-    width: 224px
+    width: 224px;
 }
 
 .list .list__item--edit .list__label {
